@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+}
+
+.chart-background {
+  fill: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  shape-rendering: crispEdges;
+  stroke: black;
+}
+
+.y-axis text {
+  fill: black; /* Add this to set the y-axis text color to black */
+}

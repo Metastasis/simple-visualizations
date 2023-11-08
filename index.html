@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Motor Power Calculator</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <label for="airflowVelocity">Airflow Velocity (m/s):</label>
+      <input
+        type="range"
+        id="airflowVelocity"
+        value="35"
+        min="0"
+        max="100"
+        step="1"
+      />
+      <span id="airflowVelocityValue">35</span>
+    </div>
+    <div>
+      <label for="crossSectionalArea">Cross-Sectional Area (m²):</label>
+      <input
+        type="range"
+        id="crossSectionalArea"
+        value="0.0314"
+        min="0"
+        max="0.1"
+        step="0.001"
+      />
+      <span id="crossSectionalAreaValue">0.0314</span>
+    </div>
+    <div>
+      <label for="airDensity">Air Density (kg/m³):</label>
+      <input
+        type="range"
+        id="airDensity"
+        value="1.225"
+        min="0"
+        max="2"
+        step="0.01"
+      />
+      <span id="airDensityValue">1.225</span>
+    </div>
+    <div>
+      <label for="motorEfficiency">Motor Efficiency (%):</label>
+      <input
+        type="range"
+        id="motorEfficiency"
+        value="85"
+        min="0"
+        max="100"
+        step="1"
+      />
+      <span id="motorEfficiencyValue">85</span>
+    </div>
+    <p>Required Power (Watts): <span id="requiredPower"></span></p>
+    <script src="src/script.ts"></script>
+  </body>
+</html>
