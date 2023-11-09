@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Compound Interest Calculator</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+<div>
+  <label for="purchasePriceSlider">Average Purchase Price:</label>
+  <input type="range" id="purchasePriceSlider" min="100" max="1500" value="1000">
+  <span id="purchasePriceValue">1000</span>
+</div>
+
+<div>
+  <label for="termsSlider">Terms (years):</label>
+  <input type="range" id="termsSlider" min="1" max="30" value="10">
+  <span id="termsValue">10</span>
+</div>
+
+<div>
+  <label for="numBondsSlider">Number of Bonds:</label>
+  <input type="range" id="numBondsSlider" min="1" max="1000" value="100">
+  <span id="numBondsValue">100</span>
+</div>
+
+<div>
+  <label for="interestRateSlider">Interest Rate (%):</label>
+  <input type="range" id="interestRateSlider" min="0.1" max="20" step="0.1" value="5">
+  <span id="interestRateValue">5</span>
+</div>
+
+<div id="plot"></div>
+
+<script src="src/finances/compound_bonds.js"></script>
+</body>
+</html>
